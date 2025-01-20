@@ -1,0 +1,9 @@
+F(z) = Z^2 + C[Z(n)=Z(n-1)^2+C]. Add 0 as the initial z where C is a coplex number and keep iterating the answer.
+When this is done, one of two cases can occur.
+Case 1: The answer grows and tends to infinity.
+Case 2: The the distance between the answers is bounded and it never goes beyond 2.
+
+The Mandelbrot set is the set of complex numbers, C for which case 2 holds.
+Everything in the Mandelbrot set has to be within distance 2 of the centre when plotted on a graph.
+Everything inside the diagram is within the Mandelbrot set.
+The values at the edges are such that anyslight change causes an unpredictable outcome in such a way that it can be in or out of the set,
