@@ -1,0 +1,13 @@
+When a function is known, we can always obtain the correct output(y) given the input(x) and a graph can be plotted for the function using the known x and y values.
+When it is unknown, and only know some of the x and y values, we know the inputs and outputs but noth the functions used to produce them. A neural network can be used as a function approximator. This neural network takes the inputs and outputs and apporximates the function which can be visualized with a graph.
+It consists of neurons which are nodes that take in different inputs from the previous layer and produce and output to be fed to the next layer.
+A neuron is a function that takes any number of inputs and has one output. Each input is mauliplied by a weight and all are added together with a bias [Nx = (wnxn + b)].
+Neurons work as building blocks and the equation formed produces a straight line which can be manipulated ny adjusting the weight(w) and bias(b), such that when it is combined with other neurons, it forms a complex function formed from lots of linear functions.
+However, combining linear functions forms another linear function and this becomes a problem when we need a curve, thus we need a non linearity. We can use a rectified linear unit [ReLU(x) = MAX(x,0)]. This becomes our activation function and we apply it to our previous neuron [Nx = MAX(wn + b,0)]. This forms a function with two straight lines whose functions can be adjusted to change the angle between them and their length but they can not be lifted off the x axis. When multiple of these are added together, we get something somolar to a curve. Many neurons working together can overcome the limitations of individual nuerons.
+Back propagation actomatically gets weights and biases by tweaking and tuning the parameters of the network bit by bit to improve the approximation. If we use no activation function(inear), the network fails to learn because we need those non linearities.
+If we need a more complicated function, we can add more layers and neurons and this makes the approkimation easier. Nueral Networks are Universal Function Approximators meaning they can approximate any funtion to any degree of precision, you could always add more nuerons.
+
+Neural networks cannot learn anything.
+You cannot have an infinite number of neurons as there are limitations on network size and what can be modelled.
+The learning process is also very long and you cannot fing the optimal parameters magically.
+IN ORDER FOR NEURAL NETWORKS TO approximate A FUNcTION, you need the data that actually describes the function, the approximation will be wrong if the data is insufficient, nomatter how many nuerons you have or how sophisticated your network is.
